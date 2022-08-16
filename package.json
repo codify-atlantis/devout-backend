@@ -1,0 +1,29 @@
+{
+  "name": "dna-backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node -e \"const cmd = process.env.NODE_ENV === 'production' ? 'node ./bin/www' : 'nodemon ./bin/www'; require('child_process').execSync(cmd, { stdio: [0,1,2] });\""
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.9",
+    "cors": "^2.8.5",
+    "date-fns": "^2.28.0",
+    "debug": "^2.6.9",
+    "dotenv": "^10.0.0",
+    "express": "~4.16.1",
+    "express-rate-limit": "^5.3.0",
+    "fast-xml-parser": "^4.0.8",
+    "googleapis": "^104.0.0",
+    "helmet": "^4.6.0",
+    "hpp": "^0.2.3",
+    "nodejs-web-scraper": "^6.1.0",
+    "pusher": "^5.0.0",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
